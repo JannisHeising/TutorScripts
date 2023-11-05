@@ -11,7 +11,7 @@ Dieses Skript erledigt drei Dinge:
 2. Löschen derjenigen Abgaben, deren Nachname nicht in der Namensliste auftaucht.
 3. Falls eine Abgabe eine einzelne zip-Datei ist, entzippen dieser (+löschen der zip-Datei).
 
-Achtung: Wenn mehrere Abgaben mit dem gleichen Nachnamen übrigbleiben, muss man manuell schauen, welches die richtige ist. Vornamen werden ignoriert, weil sie manchmal auf Moodle und Müsli unterschiedliche Formatierungen haben.
+Achtung: Die Nachnamen der Leute müssen auf Müsli und Moodle identisch sein, sonst werden sie nicht erkannt, bzw man muss sie manuell zur Namensliste hinzufügen! Wenn mehrere Abgaben mit dem gleichen Nachnamen übrigbleiben, muss man manuell schauen, welches die richtige ist. Vornamen werden vom Skript ignoriert, weil sie manchmal auf Moodle und Müsli unterschiedliche Formatierungen haben.
 
 
 ## create-score.py
@@ -29,6 +29,6 @@ Dieses Skript trägt die Punkte aus der JSON-Datei in eine html-Datei ein. Hierz
 4. Rechtsklick darauf -> Copy Outer HTML.
 5. Füge den kopierten Text in eine Textdatei ein.
 
-(Man kann jeden beliebigen HTML-Teil kopieren, solange das Element mit id="grading-table" vollständig enthalten ist.)
+(Man kann jeden beliebigen HTML-Teil kopieren, solange das Element mit id="grading-table" vollständig enthalten ist. Das Einfügen erfolgt dann an der entsprechenden Stelle.)
 
 Nun kann man das Skript ausführen. Anschließend kann man den veränderten Text wieder in Müsli einfügen, und zwar wieder nach Schritt 1-4, nur am Ende Paste Outer HTML (statt Copy).
